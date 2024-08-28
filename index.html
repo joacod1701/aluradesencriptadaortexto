@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <h2>Ingrese el texto aqui</h2>
+            <textarea id="inputText" placeholder="Arrastra y suelta el texto o un archivo de texto aquí, o escríbelo" 
+                      ondragover="event.preventDefault()" 
+                      ondrop="handleDrop(event)"></textarea>
+            <div class="buttons">
+                <button id="encryptBtn">Encriptar</button>
+                <button id="decryptBtn">Desencriptar</button>
+            </div>
+            <small>🔒 Solo letras minúsculas y sin acentos</small>
+        </div>
+        <div class="output-section">
+            <img src="no-message-found.png" alt="Ningún mensaje fue encontrado">
+            <p id="outputMessage">Ningún mensaje fue encontrado</p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
